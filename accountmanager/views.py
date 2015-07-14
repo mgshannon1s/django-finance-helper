@@ -18,7 +18,10 @@ def displayAllAccounts(request):
 
 def displayMintAccounts(request):
     mint = mintapi.Mint(email, password)
-    output = mint.get_accounts()
+    accounts = mint.get_accounts()
+    output=""
+    for account in accounts:
+        output=output+"Account Name:"+account['accountName']+"<br>"
     return HttpResponse(output)
 
 def displayMintTransactions(request):

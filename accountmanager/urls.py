@@ -9,5 +9,5 @@ urlpatterns = [
     url(r'^accounts/$', views.displayAllAccounts, name='accounts'),
     url(r'^accounts/mint/$', views.displayMintAccounts, name='mint accounts'),
     url(r'^accounts/mint/transactions$', views.displayMintTransactions, name='mint transactions'),
-    url(r'^accounts/mint/$', views.displayMintBudgets, name='mint budgets'),
+    url(r'^accounts/mint/budgets/$', views.displayMintBudgets, name='mint budgets'),
 ]
